@@ -1,0 +1,16 @@
+ Apply DBSCAN (Density-Based Spatial Clustering of Applications with Noise) to the Iris dataset and explore the resulting clusters. You will also identify any outliers and visualize the clustering results.
+Task:
+
+   1.  Load the Iris dataset using sklearn.datasets.load_iris().
+   2.  Preprocess the data by scaling the features to ensure that DBSCAN performs well.
+   3.  Apply the DBSCAN clustering algorithm to the data, adjusting the parameters eps (maximum distance between two samples for one to be considered as in        the neighborhood of the other) and min_samples (the number of points required to form a dense region).
+    4. Visualize the clustering results in two separate scatter plots:
+        Plot sepal length vs. sepal width and color the points based on their cluster labels.
+        Plot petal length vs. petal width and color the points based on their cluster labels.
+    5. Interpret the results by analyzing:
+        The number of clusters formed by DBSCAN.
+        The number of outliers (points labeled as -1).
+   6. Compare the DBSCAN clustering results with the true target labels (iris.target) and evaluate how well DBSCAN groups the flowers.
+
+    7. Experiment with different eps and min_samples values to observe how the clustering changes.
+   8. Try using another clustering algorithm, such as K-Means, on the same dataset and compare its results with DBSCAN.
